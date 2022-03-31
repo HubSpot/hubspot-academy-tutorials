@@ -1,0 +1,7 @@
+{
+  "global" : false,
+  "icon" : "fontawesome-5.14.0:Identification%20Card",
+  "host_template_types" : [ "PAGE" ],
+  "label" : "Image and Text",
+  "is_available_for_new_content" : true
+}

@@ -1,0 +1,24 @@
+<!-- module html  -->
+<section class="image-text">
+	{% if module.image_field.src %}
+
+	{% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+
+    <img srcset="{{ resize_image_url(module.image_field.src, 288) }} 288w,
+         {{ resize_image_url(module.image_field.src, 468) }} 468w,
+         {{ resize_image_url(module.image_field.src, 736) }} 736w,
+         {{ resize_image_url(module.image_field.src, 928) }} 928w"
+         sizes="(max-width: 320px) 288px,
+                (max-width: 500px) 468px,
+                (max-width: 768px) 736px,
+                928px"
+         src="{{ module.image_field.src }}"
+         alt="{{ module.image_field.alt }}"
+         width="{{ module.image_field.width }}"
+         height="{{ module.image_field.height }}"
+         {{ loadingAttr }}>
+         
+    {% endif %}
+  <h2 class="image-text__heading">{% inline_text field="section_heading" value="{{ module.section_heading }}" %}</h2>
+  <p class="image-text__description">{% inline_rich_text field="section_description" value="{{ module.section_description }}" %}</p>
+</section>

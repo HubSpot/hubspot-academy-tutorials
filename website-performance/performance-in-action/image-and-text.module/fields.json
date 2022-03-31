@@ -1,0 +1,36 @@
+[ {
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : true,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : true,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "name" : "section_heading",
+  "display_width" : null,
+  "label" : "Section Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Section heading"
+}, {
+  "name" : "section_description",
+  "display_width" : null,
+  "label" : "Section Description",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>"
+} ]
